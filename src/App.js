@@ -22,7 +22,7 @@ function App() {
     <div>
         <h1>System do zapisów na zajęcia</h1>
         <h2>Twój e-mail to {email.toUpperCase()}</h2>
-        {message}
+        {email.length > 0 && message}
         <input type="text" value={email} onChange={handleChange}/>
     </div>
   );
